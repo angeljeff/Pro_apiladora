@@ -1,0 +1,111 @@
+
+.contenedor-padre{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.personal{
+    position: relative;
+    height: 300px;
+    z-index: 20;
+    background: url(../Gp/assets/img/ssw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.personal::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 231, 238, 0.2);
+    z-index: 10; 
+
+}
+
+.container-perfil{
+    width: 60%;
+    /* max-width: 800px; */
+    height: 365px;
+    background-color: #fff; 
+    margin: 0 auto;
+    border-radius: 4px;
+    position:absolute;
+    top:15%;
+    left: 20%;
+    z-index: 100;
+    padding: 14px 20px;
+}
+
+.contenedor-name{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.contenedor-name .name{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #20c997;
+}
+
+.contenedor-name button> i{
+    font-size: 18px !important;
+}
+
+.contenedor-inputs {
+    padding-left: 3%;
+}
+
+.contenedor-inputs .cvb{
+    margin-top: 1%;
+}
+.contenedor-inputs .cvb input{
+    max-width: 650px;
+    padding-left: 10px;
+}
+
+
+@media only screen and (max-width:600px) {
+    .contenedor-name .name> h3{
+        font-size: 24px !important;
+    }
+
+    .contenedor-name button> i{
+        font-size: 16px !important;
+    }
+    
+}
+
+
+@media only screen and (max-width:700px) {
+    .contenedor-name .name> h3{
+        font-size: 24px !important;
+    }
+
+    .contenedor-name button> i{
+        font-size: 16px !important;
+    }
+    
+}
+
+@media only screen and (max-width:400px) {
+    .contenedor-name button{
+        height: 35px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media only screen and (max-width:640px) {
+    .contenedor-padre{
+        margin-top: 12%;
+    }
+
+}

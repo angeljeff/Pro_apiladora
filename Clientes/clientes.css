@@ -1,0 +1,45 @@
+
+table th {
+    color: black !important;
+}
+th, td{
+    padding: 5px 10px !important;
+}
+
+table, thead, tbody, tr, td{
+    border: 1px solid rgba(210, 210, 210, .9) !important;
+}
+
+.dt-buttons.btn-group{
+    position: absolute !important;
+   
+}
+table.table.table-hover.table-bordered{
+    margin-top: 1% !important;
+    width: 100% !important;
+    border-radius: 2px !important;
+}
+
+input[type="search"]{
+    border: 1px solid rgba(210, 210, 210, .9) !important;
+}
+
+input[type="search"]:focus{
+    border: 1.5px solid rgba(101, 100, 100, 0.9) !important;
+}
+
+.buton{
+    /* margin: 15px 10px 10px 30px; */
+    margin: 3px 0 3px 3% !important;
+    background-color: #8fdf82 !important;
+    color: #000000 !important;
+    
+}
+@media only screen and (max-width:770px){
+     .dt-buttons.btn-group{
+    position: relative !important;
+   
+
+     }
+    
+}

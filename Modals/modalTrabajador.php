@@ -1,0 +1,54 @@
+<!-- Modal -->
+<div class="modal fade" id="modalTrabajador" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" >
+    <div class="modal-content">
+      <div class="modal-header headerRegister bg-success">
+        <h5 class="modal-title text-dark" id="titleModal">Nuevo Trabajador</h5>
+        <button type="button" class="cerrar-success" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <form id="formTrabajador" name="formTrabajador" class="form-horizontal">
+              <input type="hidden" id="idUsuario" name="idUsuario" value="">
+              <div class="row">
+              <div class="col-md-6">
+                  <label for="txtNombre">Nombres: </label>
+                  <input type="text" class="form-control input-style" id="txtNombre" name="txtNombre" required="">
+                </div>
+                <div class=" col-md-6">
+                  <label for="txtApellido">Apellidos: </label>
+                  <input type="text" class="form-control input-style" id="txtApellido" name="txtApellido" required="">
+                </div>
+              </div>
+              <div class="row pt-2">
+                <div class="col-md-6">
+                  <label for="txtIdentificacion" >Cédula: </label>
+                  <input type="text" class="form-control input-style" id="txtIdentificacion" name="txtIdentificacion" maxlength="10" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" >
+                </div>
+                <div class="col-md-6">
+                  <label for="txtTelefono">Celular:</label>
+                  <input type="text" class="form-control input-style" id="txtTelefono" name="txtTelefono" minlength="10" maxlength="10" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
+                </div>
+
+              </div>
+
+              <div class="row pt-2">
+                <div class="col-md-6">
+                  <label for="txtEmail">Correo electrónico: </label>
+                  <input type="email" class="form-control input-style" id="txtEmail" name="txtEmail" required="">
+                </div>
+              </div>
+              <hr>
+              <div class="tile-footer right">
+                <button id="btnActionForm" class="btn btn-success" type="submit"><i class="fa fa-fw fa-lg fa-check-circle"></i><span id="btnText">Guardar</span></button>&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cerrar</button>
+              </div>
+            </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

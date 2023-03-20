@@ -1,0 +1,153 @@
+
+.ContenedorCitas{
+    padding: 14px 50px;
+}
+.citas__disponibles{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.citas__disponibles__texto{
+    padding: 3px 8px; 
+    border-radius: 3px; 
+    font-weight: 700; 
+    color:#000;
+    margin: 0;
+}
+
+.disponible{
+    border: 2px solid #01DF01;
+    background-color: #00FF40;
+}
+
+.pendiente{
+    border: 2px solid #717272;
+    background-color: #b2b7b3;
+}
+
+.ocupado{
+    border: 2px solid #e1373d;
+    background-color: #df6949;
+}
+
+.citas__disponibles__boton{
+    margin: 0 !important;
+    padding: 2px 7px;
+    border-radius: 2px;
+    border: 1.4px solid rgb(100, 99, 99);
+    line-height: 1;
+    background-color: #b2fdc5 !important;
+    cursor: pointer;
+}
+
+.citas__disponibles__boton:hover{
+    background-color: #87e39e !important;
+}
+
+.numeracion{
+    border: none;
+    border-radius: 1px;
+}
+
+.select-select{
+    outline: 1px solid rgba(200, 200, 200, 0.8) !important;
+    padding-left: 10px !important;
+}
+
+.modal-body{
+    min-height: 350px;
+}
+
+
+
+.con-bt{
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.azul{
+    background-color: #5b67eb;
+}
+
+
+.resumen{
+    padding: 7px 50px;
+}
+
+@media only screen and (max-width: 400px){
+    /* .modal-body{
+        height: 500px;
+    } */
+    .resumen{
+        padding: 4px 10px;
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+    .ContenedorCitas{
+        padding: 6px 10px;
+    }
+    .citas__disponibles__texto,
+    .citas__disponibles__boton{
+        font-size: 14px;
+    }
+
+
+}
+
+@media only screen and (max-width: 800px){
+    .con-bt{
+        margin-top: 50px;
+
+    }
+
+
+}
+
+.resumencon{
+    display: flex !important;
+    justify-content: space-between;
+}
+
+/* .resumencon label,
+.resumencon p
+{
+    display: inline-block;
+} */
+
+.container-resumen{
+    display: flex !important;
+    justify-content: space-around !important;
+    margin-top: 8px !important;
+}
+
+.container-resumen .resumencon .p,
+.resumencon .p {
+    width: 120px;
+    padding: 3px 6px;
+    border-bottom: 1px solid rgb(86, 63, 236);
+    background-color: #dacbcb;
+    color: #1a1919;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.con-b{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.sinfocus{
+    outline: 1px solid rgba(200, 200, 200, 0.8);
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+

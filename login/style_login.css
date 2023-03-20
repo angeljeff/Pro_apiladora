@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.contenedor_principal{
+   background: #11998e;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-basis: 20%;
+}
+
+.contenedor_login{
+    display: flex;
+    align-items: center;
+   
+    width: 90%;
+    max-width: 1000px;
+    
+
+}
+
+.contenedor_imagen{
+    background-color: #777474;
+    flex-basis: 0;
+    flex-grow: 1.5;
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    background-image: url('../images/arroz_login.png');
+    background-size: 260%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
+.contenedor_imagen::after{
+    content: '';
+    position: absolute;
+    background: rgba(228,63,90,0.60);
+   
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.contenedor_imagen::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px 3px rgba(0, 0,  0, .3);
+    z-index: -1;
+}
+
+.contenedor_imagen h2 {
+    font-family: 'Chiller';
+    font-size: 80px;
+    z-index: 20;
+    color: #fff;
+}
+
+.contenedor_imagen p {
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    font-weight: 400;
+    z-index: 10;
+    color: #fff;
+}
+
+.contenedor_ingreso{
+    background-color: rgb(146, 143, 143);
+    flex-basis: 0;
+    flex-grow: 2;
+    height: 525px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor_ingreso::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px 3px rgba(0, 0,  0, .3);
+    z-index: -1;
+}
+
+.contenedor_ingreso h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 45px;
+    font-weight: 700;
+    color: #1420ff;
+    margin-bottom: 15px;
+}
+
+.contenedor_ingreso a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contenedor_ingreso a:hover{
+    color: #232df9;
+}
+
+.contenedor_formulario{
+    width: 90%;
+}
+
+.create_cuenta{
+    width: 35%;
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(146, 143, 143);
+    transition: 0.5s ease-in background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    
+}
+
+.create_cuenta:hover{
+    background-color: rgb(143, 134, 134);
+     
+}
+
+.create_cuenta> a{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+
+}
+.create_cuenta:hover > a{
+    color: #000;    
+}
+
+
+
+.line{
+    width: 100%;
+    height: 14px;
+    background-color: #1420ff;
+    border-radius: 1px;
+}
+
+/*#close{
+    position: absolute;
+    top: 42px;
+    right: 25px;
+    font-size: 25px;
+    color: #1b34f3;
+    cursor: pointer;
+}*/
+
+
+
+/* sweel alert  */
+
+.swal2-input {
+    background: #ccc !important;
+    color: #000 !important;
+    
+}
+.swal2-validation-message {
+    background: rgb(146,143,143) !important;
+    color: aliceblue !important;
+
+}
+
+
+.swal2-input:focus {
+    outline: solid 1px #1420ff !important;
+    box-shadow: 0px 1px 2px black !important;
+
+}
+
+.cont_inpt{
+    position: relative;
+}
+
+.eye , .user {
+	color: #8e8d8d;
+	position: absolute;
+    text-align: center;
+    font-size: 1.3rem;
+	left: 92%;
+	top: 35%;
+	transform: translateY(-50%);
+}
+
+#eye_2.mos{
+    display: none;    
+}
+
+
+#eye_1.mos{
+    display: none;    
+}
+
+.input_mail , .input_password {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #ccc;
+    margin-bottom: 25px;
+
+}
+
+.input_mail , .input_password::placeholder {
+    font-size: 15px;
+
+}
+.input_password:focus {
+    outline: solid 1px #1420ff;
+    box-shadow: 0px 1px 2px black;;
+
+}
+
+.input_mail:focus {
+    outline: solid 1px #1420ff;
+    box-shadow: 0px 1px 2px black;;
+
+
+}
+
+.btn_ingresar{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: linear-gradient(to right, #1420ff, #11998e);
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.5s ease background-color ;
+    border-radius: 12px 0 12px 0;
+
+}
+
+.btn_ingresar:hover{
+    background: linear-gradient(to right, rgba(228,63,90,0.60), #1420ff);
+
+}
+
+@media only screen  and (max-width:900px){
+    .contenedor_imagen{
+        display: none;
+    }   
+}
+
+@media only screen  and (max-width:320px){
+    .contenedor_ingreso h2{
+        font-size: 30px;
+    }
+    .btn_ingresar{
+        font-size: 14px;
+    }
+}
+
+@media only screen  and (max-width:420px){
+    .swal2-input-label{
+        margin-left: 20px !important;
+    }
+
+}
+
+
+
+
